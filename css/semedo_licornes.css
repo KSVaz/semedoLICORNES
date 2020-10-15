@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* déclaration flex  */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* déclaration des colonnes flex  */
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333%;
+}
+
+.col-5 {
+    width: 41.666666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33333%;
+}
+
+.col-8 {
+    width: 66.666666%;
+}
+
+/* typo des titres  */
+
+h1, h2, h4 {
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+}
+
+/* style du header en top nav  */
+
+header {
+    height: 70px;
+    background-color: #C55394;
+    color: #fff;
+    padding: 15px;
+    /* position sur la page  */
+    display: flex;
+    /* alignement vertical  */
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav a {
+    height: 70px;
+    width: auto;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 15px;
+    /* position sur la page  */
+    position: relative;
+    left: 25px;
+}
+
+
+nav a:hover {
+    background-color: #EB43A3;
+}
+
+/* style du titre principal  */
+
+#titrePrincipal {
+    width: 520px;
+    height: 150px;
+    background: url(../img/rainbow.png) no-repeat;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    color:#C55394;
+    /* font-size calculée à partir de photoshop  */
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+}
+
+/* style du conteneur  */
+
+#conteneur {
+    width: 1218px;
+    height: 1287px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    /* ombre avec dégradé  */
+    box-shadow: 1px 1px 12px #333;
+}
+
+/* style des titres  */
+
+#conteneur h2 {
+    color:#EB43A3;
+    /* font-size calculée à partir de photoshop  */
+    font-size: 22px;
+    padding: 60px 10px 20px 15px;
+}
+
+#conteneur h4 {
+    color: #C55394;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* style de la section 1 de conteneur  */
+
+#le-principe p {
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+/* style de la section 2 avec la galerie d'images  */
+
+.images {
+    padding: 5px;
+}
+
+figure {
+    padding: 10px;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 12px;
+
+    /* légende sur l'image  */
+    position: relative;
+    top: -34px;  
+}
+
+/* effet zoom sur les balises figures */
+
+figure:hover {
+    /* transform: scale indique le niveau de grossissement */
+    transform: scale(1.1);
+    /* transisiton indique la durée de l'animation */
+    transition: 1s;
+}
+
+/* style de la section 3 informations adresse  */
+
+iframe {
+    width: 688px;
+    height: 451px;
+    padding: 15px;
+}
+
+.adresse {
+    padding-bottom: 60px;
+    padding-top: 15px;
+}
+
+.form p {
+    padding-bottom: 20px;
+}
+
+input#email {
+    padding: 5px 10px;
+    width: 190px;
+}
+
+input#valider {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #EB43A3;
+    border-radius:5px ;
+    background-color:#C55394;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* style du footer  */
+
+footer {
+    margin-top: 40px;
+    height: 53px;
+    background-color: #E577B5;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    text-align: right;
+    color: #fff;
+    line-height: 50px;
+    padding-right: 10px;
+}

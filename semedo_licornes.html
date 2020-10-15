@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyUnicorn</title>
+    <!-- typo google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+    <!-- reset Eric Meyer  -->
+    <link rel="stylesheet" href="css/reset_eric_mayer.css">
+    <!-- feuille de style externe  -->
+    <link rel="stylesheet" href="css/semedo_licornes.css">
+    <!-- kit font awesome pour les icônes  -->
+    <script src="https://kit.fontawesome.com/8ec776306d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="row"> <!-- en-tête de la page -->
+        <h2 class="col-8">MyUnicorn</h2>
+        <nav class="col-4"> 
+            <!-- les boutons de navigations sont des ancres  -->
+            <a href="#le-principe">Le principe</a>
+            <a href="#nos-licornes">Nos licornes</a>
+            <a href="#nous-trouver">Nous trouver</a>
+        </nav>
+    </header>
+
+    <section id="titrePrincipal"> <!-- titre principal avec background rainbow -->
+        <h1>Un jour, une licorne</h1>
+    </section> <!-- fin du titre principal -->
+
+    <div id="conteneur"> <!-- contenu principal -->
+        
+        <section id="le-principe"> <!-- section 1 texte -->
+            <h2><i class="far fa-star"></i> Le principe</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo voluptas reiciendis non pariatur, numquam recusandae praesentium deserunt harum cumque debitis veniam sed adipisci odio facere placeat tempora eaque possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque porro optio dignissimos veniam perferendis labore sunt tempora numquam voluptatem, similique minus quidem atque culpa veritatis aliquid placeat, ex dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat incidunt dolor, eaque ipsum voluptatum omnis recusandae iure autem adipisci dicta voluptas, ipsa voluptatibus qui repudiandae, aperiam facere vero nesciunt excepturi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolore voluptas autem molestiae, magni quos veritatis cum sunt et neque enim voluptates saepe, asperiores aut dolorem ipsam libero harum similique!</p>
+        </section> <!-- fin de section 1 -->
+        
+        <section id="nos-licornes"> <!-- section 2 galerie d'images -->
+            <h2><i class="far fa-star"></i> Nos licornes</h2>
+            <div class="row images">
+                <figure class="col-3">
+                    <img src="img/photo1.jpg" alt="MyUnicorn - Une licorne">
+                    <figcaption>Lulu Confetty</figcaption>
+                </figure>
+                <figure class="col-3">
+                    <img src="img/photo2.jpg" alt="MyUnicorn - Une licorne">
+                    <figcaption>Lapillon Magik</figcaption>
+                </figure>
+                <figure class="col-3">
+                    <img src="img/photo3.jpg" alt="MyUnicorn - Une licorne">
+                    <figcaption>El Ninjacorn</figcaption>
+                </figure>
+                <figure class="col-3">
+                    <img src="img/photo4.jpg" alt="MyUnicorn - Une licorne">
+                    <figcaption>Sweety Candy</figcaption>
+                </figure>
+            </div>
+        </section> <!-- section 2 galerie d'images -->
+        
+        <section id="nous-trouver"> <!-- section 3 adresse / contact  -->
+            <h2><i class="far fa-star"></i> Nous trouver</h2>
+            <div class="row infos"> <!-- pour mettre le contenu en flex -->
+                <div class="col-7">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.184893278549!2d2.3541327156293663!3d48.85468457928706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671fd10fa77a9%3A0xbefa2358f9e7a776!2s18%20Rue%20Geoffroy%20l&#39;Asnier%2C%2075004%20Paris!5e0!3m2!1sfr!2sfr!4v1602148431935!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-5">                   
+                    <div class="adresse">
+                        <h4>Notre élevage de licornes est situé au :</h4>
+                        <address>18, rue Geoffroy l'Asnier <br> 75004 Paris <br> 01 23 45 67 89</address>
+                    </div>
+
+                    <div class="form">
+                        <h4>Newsletter</h4>
+                        <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                        <form class="formUnicorn" action="newsletter.php" method="POST">
+                            <fieldset>
+                                <input type="email" name="email" id="email" placeholder="votre@email.fr" required>
+                                <input type="submit" id="valider" name="valider" value="Valider">
+                            </fieldset>
+                        </form>
+                    </div> <!-- fin du formulaire -->     
+                </div> <!-- fin de la colonne adresse + formulaire -->
+            </div> <!-- fin de la div row -->
+        </section>
+
+    </div> <!-- fin du contenu principal -->
+
+    <footer> <!-- bas de page -->
+        <p>2016 <i class="far fa-copyright"></i> WebForce3</p>
+    </footer>
+</body>
+</html>
